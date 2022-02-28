@@ -6,6 +6,11 @@ from django.db import models
 class Category(models.Model):
     name= models.CharField(max_length=100,null=False,blank=False)
 
+    # @classmethod
+    # def search_by_category(cls,search_term):
+    #     news = cls.objects.filter(name__icontains=search_term)
+    #     return news
+
     def __str__(self):
         return self.name
 
