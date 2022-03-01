@@ -50,7 +50,7 @@
                                     <div class="container">
                                         <div class="row justify-content-center">
                                             <div class="card">
-                                                <img src="{{photo.image.url}}" class="img-responsive" alt="Image">
+                                                <img src="{% url  'photo' photo.id %}" class="img-responsive" alt="Image">
                                                 <p>{{photo.description}}</p>
                                                 <p>{{photo.category}}</p>
                                             </div>
